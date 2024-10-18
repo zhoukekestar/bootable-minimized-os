@@ -1,7 +1,6 @@
+在 ARM 机器上（Apple M1），通过 Docker 构建一个最小化的内核系统（打印 Hello World），使用 GRUB 来做引导，最终生成一个 iso 文件。
 
-    在 ARM 机器上（Apple M1），通过 Docker 构建一个最小化的内核系统（打印 Hello World），使用 GRUB 来做引导，最终生成一个 iso 文件。
-
-    最终的效果为，通过 CD-ROM 启动机器，并能在屏幕上打印 Hello World。
+最终的效果为，通过 CD-ROM 启动机器，并能在屏幕上打印 Hello World。
 
 # QuickStart
 
@@ -16,7 +15,7 @@ $ qemu-system-x86_64 -cdrom os.iso
 
 ### Docker（简易方式）
 
-    简易方式，通过 Dockerfile 构建镜像，已适配国内加速。
+简易方式，通过 Dockerfile 构建镜像，已适配国内加速。
 
 ```sh
 $ docker build -t bootable-compiler-amd64 .
@@ -55,7 +54,7 @@ $ apt-get install grub-pc-bin
 
 ##### 创建并保存当前容器
 
-    为了保存当前容器，方便后续继续使用（因为加了 `--rm` 命令，所以需要保持当前容器，并新开终端执行）。
+为了保存当前容器，方便后续继续使用（因为加了 `--rm` 命令，所以需要保持当前容器，并新开终端执行）。
 
 ```sh
 # 显示容器列表
