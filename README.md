@@ -1,5 +1,7 @@
 在 ARM 机器上（Apple M1），通过 Docker 构建一个最小化的内核系统（打印 Hello World），使用 GRUB 来做引导，最终生成一个 iso 文件。
 
+> 经测试 ARM 和 x86 的 MacBook 都能正常执行。
+
 最终的效果为，通过 CD-ROM 启动机器，并能在屏幕上打印 Hello World。
 
 # QuickStart
