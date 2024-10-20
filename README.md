@@ -10,6 +10,10 @@ $ qemu-system-x86_64 -cdrom os.iso
 
 ![image](https://github.com/user-attachments/assets/1b05bc8a-f707-4927-93d9-1f40156abbf0)
 
+VirtualBox Demo
+
+<img width="756" alt="image" src="https://github.com/user-attachments/assets/69389b7e-69eb-40d4-9d5b-1446eaad9cd6">
+
 
 # 构建环境
 
@@ -20,6 +24,8 @@ $ qemu-system-x86_64 -cdrom os.iso
 ```sh
 $ docker build -t bootable-compiler-amd64 .
 ```
+
+> 如果 `mirror.gcr.io/ubuntu:22.04` 下载不了，可以替换为 `m.daocloud.io/docker.io/ubuntu:22.04` 等其他镜像地址。
 
 ### Docker（分步骤）
 
